@@ -2,7 +2,7 @@
 .open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight:400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
@@ -53,6 +53,7 @@
     padding: 20px;
     width: 1140;
     height: 461;
+   
 
 }
 .bb{
@@ -325,7 +326,7 @@ span{
     font-size: 50px; 
     margin-bottom: 25px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); 
-
+}
 .newsletter-form {
     display: flex;
     max-width: 600px;
@@ -356,84 +357,15 @@ span{
 .newsletter-form button:hover {
     background-color: #e67e00;
 }
-.site-footer {
-    background-color: #f8f8f8;
-    padding: 60px 20px;
-    border-top: 1px solid #e0e0e0;
-}
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-}
-
-.footer-brand {
-    flex: 1;
-    max-width: 350px;
-}
-
-.footer-logo {
-    width: 150px; 
-    margin-bottom: 20px;
-}
-
-.footer-brand p {
-    font-size: 1em;
-    color: #666;
-    line-height: 1.6;
-}
-
-.footer-links {
-    display: flex;
-    flex: 2;
-    justify-content: space-around;
-    gap: 30px;
-}
-
-.link-column {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.link-column a {
-    color: #555;
-    text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
-
-.link-column a:hover {
-    color: #ff8c00; 
-}
-
-.footer-socials {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
-}
-
-.footer-socials a {
-    color: #777;
-    transition: color 0.3s ease;
-}
-
-.footer-socials a:hover {
-    color: #ff8c00;
-}
-.footer {
+ 
+.last {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       background-color: #f1f5fb;
       padding: 40px 60px;
-      color: #333;
+      color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-left {
@@ -448,7 +380,7 @@ span{
 
 .footer-left p {
       font-size: 14px;
-      color: #555;
+      color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-links {
@@ -466,7 +398,7 @@ span{
 
 .footer-column a {
       text-decoration: none;
-      color: #333;
+      color: rgba(0, 0, 0, 0.5);
       margin: 5px 0;
       font-size: 14px;
       transition: color 0.3s;
