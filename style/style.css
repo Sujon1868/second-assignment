@@ -74,11 +74,11 @@ span{
     align-items: center;
 }
 .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      max-width: 1000px;
-      margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
 } 
 .product-card{
     text-align: center;
@@ -95,23 +95,23 @@ span{
     margin: 10px 0 5px;
 }
 .product-price {
-      font-weight: bold;
-      font-size: 16px;
-      margin-bottom: 15px;
-    }
-    .add-to-cart {
-      background-color: #f26522;
-      color: white;
-      padding: 10px;
-      border: none;
-      width: 100%;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    .add-to-cart:hover {
-      background-color: rgba(233, 90, 8, 1);
-    }
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.add-to-cart {
+    background-color: #f26522;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.add-to-cart:hover {
+    background-color: rgba(233, 90, 8, 1);
+}
 .container {
     display: flex;
     max-width: 1200px;
@@ -213,4 +213,146 @@ span{
     width: 1140;
     height: 461;
 
+}
+.promotions-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+.small-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.promo-card {
+    position: relative;
+    border-radius: 15px; 
+    overflow: hidden; 
+    color: white;
+    /*box-shadow: 0 5px 15px rgb(0, 0, 0);*/
+    background-size: cover;
+    background-position: center;
+}
+
+.promo-card .promo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.promo-card:hover .promo-overlay {
+    background-color: rgba(116, 111, 111, 0.4); 
+}
+
+.promo-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em; 
+    margin: 0 0 10px 0;
+}
+
+.shop-now-btn {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    border-bottom-color: #ff8c00; 
+}
+
+
+.small-card-1 {
+    width: 380px;
+    height: 250px;
+    background-image: url('../B12A02-Responsive-Flowers/assets/deal-bloom.png'); 
+}
+
+.small-card-2 {
+    width: 380px;
+    height: 250px;
+    background-image: url('../B12A02-Responsive-Flowers/assets/deal-ana.png'); 
+}
+
+.large-card-promo {
+    width: 780px;
+    height: 530px;
+    background-image: url('../B12A02-Responsive-Flowers/assets/deal-zabo.png'); 
+}
+.newsletter-banner {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    background-image: url('../B12A02-Responsive-Flowers/assets/news-letter-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter-banner .banner-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2); 
+}
+
+.newsletter-banner h2 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 3em; 
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); 
+
+.newsletter-form {
+    display: flex;
+    max-width: 600px;
+    width: 90%;
+}
+
+.newsletter-form input {
+    flex-grow: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+.newsletter-form button {
+    background-color: rgba(233, 90, 8, 1); 
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #e67e00;
 }
